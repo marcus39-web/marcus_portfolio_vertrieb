@@ -1,0 +1,45 @@
+[2026-06-01T20:28:50+00:00] STARTTLS konnte nicht aktiviert werden. in D:\09-resier.de\src\Mail\SmtpMailer.php:57
+#0 D:\09-resier.de\src\Controllers\ContactController.php(202): App\Mail\SmtpMailer->send('kontakt@marcusr...', 'Marcus Reiser K...', 'marcus.39@hotma...', 'Kontaktformular...', 'Name: Muter Fra...', 'marcusreiser15@...')
+#1 D:\09-resier.de\src\Controllers\ContactController.php(110): App\Controllers\ContactController->sendContactMail('Muter Frau', 'marcusreiser15@...', 'Test..............')
+#2 D:\09-resier.de\src\Router.php(42): App\Controllers\ContactController->submit()
+#3 D:\09-resier.de\index.php(30): App\Router->dispatch('POST', '/contact')
+#4 {main}
+----
+[2026-06-01T20:41:00+00:00] STARTTLS konnte nicht aktiviert werden. in D:\09-resier.de\src\Mail\SmtpMailer.php:66
+#0 D:\09-resier.de\src\Controllers\ContactController.php(202): App\Mail\SmtpMailer->send('kontakt@marcusr...', 'Marcus Reiser K...', 'marcus.39@hotma...', 'Kontaktformular...', 'Name: Maier Hub...', 'marcusreiser15@...')
+#1 D:\09-resier.de\src\Controllers\ContactController.php(110): App\Controllers\ContactController->sendContactMail('Maier Huber', 'marcusreiser15@...', 'Test..............')
+#2 D:\09-resier.de\src\Router.php(42): App\Controllers\ContactController->submit()
+#3 D:\09-resier.de\index.php(30): App\Router->dispatch('POST', '/contact')
+#4 {main}
+----
+[2026-06-01T21:01:28+00:00] STARTTLS konnte nicht aktiviert werden. in D:\09-resier.de\src\Mail\SmtpMailer.php:66
+#0 D:\09-resier.de\src\Controllers\ContactController.php(202): App\Mail\SmtpMailer->send('kontakt@marcusr...', 'Marcus Reiser K...', 'marcus.39@hotma...', 'Kontaktformular...', 'Name: Marcus\nE-...', 'marcusreiser15@...')
+#1 D:\09-resier.de\src\Controllers\ContactController.php(110): App\Controllers\ContactController->sendContactMail('Marcus', 'marcusreiser15@...', 'Test..............')
+#2 D:\09-resier.de\src\Router.php(42): App\Controllers\ContactController->submit()
+#3 D:\09-resier.de\index.php(30): App\Router->dispatch('POST', '/contact')
+#4 {main}
+----
+[2026-06-01T21:02:08+00:00] STARTTLS konnte nicht aktiviert werden. in D:\09-resier.de\src\Mail\SmtpMailer.php:66
+#0 D:\09-resier.de\src\Controllers\ContactController.php(202): App\Mail\SmtpMailer->send('kontakt@marcusr...', 'Marcus Reiser K...', 'marcus.39@hotma...', 'Kontaktformular...', 'Name: Marcus Re...', 'marcusreiser15@...')
+#1 D:\09-resier.de\src\Controllers\ContactController.php(110): App\Controllers\ContactController->sendContactMail('Marcus Reiser', 'marcusreiser15@...', 'Test..............')
+#2 D:\09-resier.de\src\Router.php(42): App\Controllers\ContactController->submit()
+#3 D:\09-resier.de\index.php(30): App\Router->dispatch('POST', '/contact')
+#4 {main}
+----
+[2026-06-01T21:09:24+00:00] STARTTLS konnte nicht aktiviert werden. in D:\09-resier.de\src\Mail\SmtpMailer.php:57
+#0 D:\09-resier.de\src\Controllers\ContactController.php(202): App\Mail\SmtpMailer->send('kontakt@marcusr...', 'Marcus Reiser K...', 'marcus.39@hotma...', 'Kontaktformular...', 'Name: Marcus Re...', 'marcusreiser15@...')
+#1 D:\09-resier.de\src\Controllers\ContactController.php(110): App\Controllers\ContactController->sendContactMail('Marcus Reiser', 'marcusreiser15@...', 'Test..............')
+#2 D:\09-resier.de\src\Router.php(42): App\Controllers\ContactController->submit()
+#3 D:\09-resier.de\index.php(30): App\Router->dispatch('POST', '/contact')
+#4 {main}
+----
+[2026-06-03 18:01:18] SMTP-Fehler (450): 450 You have reached trial account unique recipients limit. #MS42225 You have reached trial account unique recipients limit. #MS42225
+[2026-06-03T18:01:18+00:00] SMTP-Fehler (450): 450 You have reached trial account unique recipients limit. #MS42225 You have reached trial account unique recipients limit. #MS42225 in D:\09-hompage\marcus_portfolio\src\Mail\SmtpMailer.php:153
+#0 D:\09-hompage\marcus_portfolio\src\Mail\SmtpMailer.php(90): App\Mail\SmtpMailer->readResponse(Resource id #13, Array)
+#1 D:\09-hompage\marcus_portfolio\src\Controllers\ContactController.php(188): App\Mail\SmtpMailer->send('kontakt@marcusr...', 'Marcus Reiser K...', 'mailcheck@examp...', 'Bestaetigung: D...', 'Hallo Mail Chec...', 'marcus.39@hotma...')
+#2 D:\09-hompage\marcus_portfolio\src\Controllers\ContactController.php(148): App\Controllers\ContactController->sendMailWithFallback('smtp.mailersend...', 587, 'MS_bnIHML@marcu...', 'mssp.Ie800Jv.35...', 'tls', 'kontakt@marcusr...', 'Marcus Reiser K...', 'mailcheck@examp...', 'Bestaetigung: D...', 'Hallo Mail Chec...', 'marcus.39@hotma...')
+#3 D:\09-hompage\marcus_portfolio\src\Controllers\ContactController.php(86): App\Controllers\ContactController->sendContactMail('Mail Check', 'mailcheck@examp...', 'Dies ist ein Fu...')
+#4 D:\09-hompage\marcus_portfolio\src\Router.php(42): App\Controllers\ContactController->submit()
+#5 D:\09-hompage\marcus_portfolio\index.php(30): App\Router->dispatch('POST', '/contact')
+#6 {main}
+----
