@@ -27,9 +27,9 @@ return [
     // Link zum hervorgehobenen Projekt und Lebenslaufnachweise.
     'projectFocusUrl' => 'https://github.com/marcus39-web/GHI-CSharp-Roboter-OOP.git',
     'cvProofUrls' => [
-        '/Components/images/lebenlslauf_seite1.jpg',
-        '/Components/images/lebenlslauf_seite2.jpg',
-        '/Components/images/lebenlslauf_seite3.jpg',
+        '/Components/images/lebenslauf_seite1.jpg',
+        '/Components/images/lebenslauf_seite2.jpg',
+        '/Components/images/lebenslauf_seite3.jpg',
     ],
     // Beruflicher Werdegang für Timeline und CV-Kontext.
     'career' => [
